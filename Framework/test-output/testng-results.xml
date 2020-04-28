@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13021" started-at="2020-04-27T06:07:54Z" finished-at="2020-04-27T06:08:07Z">
+  <suite name="Default suite" duration-ms="8403" started-at="2020-04-27T06:30:32Z" finished-at="2020-04-27T06:30:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13021" started-at="2020-04-27T06:07:54Z" finished-at="2020-04-27T06:08:07Z">
-      <class name="testcases.casethree">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.casethree@396a51ab]" name="beforeTest" is-config="true" duration-ms="10758" started-at="2020-04-27T11:37:54Z" finished-at="2020-04-27T11:38:05Z">
+    <test name="Default test" duration-ms="8403" started-at="2020-04-27T06:30:32Z" finished-at="2020-04-27T06:30:41Z">
+      <class name="testcases.Demo">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.Demo@52e677af]" name="beforeTest" is-config="true" duration-ms="8267" started-at="2020-04-27T12:00:32Z" finished-at="2020-04-27T12:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:testcases.casethree@396a51ab]" name="f" duration-ms="88" started-at="2020-04-27T11:38:05Z" finished-at="2020-04-27T11:38:05Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:testcases.Demo@52e677af]" name="f" duration-ms="101" started-at="2020-04-27T12:00:41Z" finished-at="2020-04-27T12:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.casethree@396a51ab]" name="afterTest" is-config="true" duration-ms="2137" started-at="2020-04-27T11:38:05Z" finished-at="2020-04-27T11:38:07Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.Demo@52e677af]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-04-27T12:00:41Z" finished-at="2020-04-27T12:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testcases.casethree -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testcases.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
