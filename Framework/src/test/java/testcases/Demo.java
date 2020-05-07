@@ -26,7 +26,7 @@ public class Demo {
 	@BeforeTest
 	public void beforeTest() {
 		System.setProperty("webdriver.chrome.silentOutput", "true");
-		System.setProperty("webdriver.chrome.driver", "E:\\selenium\\Chrome 80.3987.106\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\selenium\\Chrome 81\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://www.way2automation.com/demo.html");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
