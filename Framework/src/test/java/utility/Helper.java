@@ -15,15 +15,18 @@ public class Helper {
 
 	// ScreenShots,Alerts,Frames,Windows,Sync Issues,JavaScript Executor
 
-	public static void captureScreenShots(WebDriver driver) {
+	public static String captureScreenShots(WebDriver driver) {
 
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String screenshotpath = System.getProperty("user.dir") + "./ScreenShots/" + getCurrentDateTime() + ".png";
 		try {
-			FileHandler.copy(src, new File("./ScreenShots/" + getCurrentDateTime() + ".png"));
+			FileHandler.copy(src, new File(screenshotpath));
 			System.out.println("ScreenShots Captured Successfully");
 		} catch (IOException e) {
 			System.out.println("Unable to Handle ScreenShots >>" + e.getMessage());
 		}
+
+		return screenshotpath;
 
 	}
 

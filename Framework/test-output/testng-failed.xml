@@ -6,8 +6,8 @@
       <class name="testcases.LoginTestERP">
         <methods>
           <include name="setUpSuite"/>
-          <include name="loginapp"/>
           <include name="setUp"/>
+          <include name="loginapp1"/>
           <include name="tearDown"/>
           <include name="tearDownMethod"/>
         </methods>

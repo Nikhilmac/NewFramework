@@ -14,13 +14,17 @@ import utility.ExcelDataProvider;
 public class LoginTestERP extends BaseClass {
 	// WebDriver driver;
 
-	@Test
+	@Test(priority = 1)
 	public void loginapp() {
 
-		Loginpage loginpage = PageFactory.initElements(driver, Loginpage.class);
+		logger = report.createTest("Login to ZipERP");
 
-		loginpage.loginToErp(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1), "13",
+		Loginpage loginpage = PageFactory.initElements(driver, Loginpage.class);
+		logger.info("Starting Application");
+
+		loginpage.loginToErp(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1), "123",
 				excel.getStringData("Login", 0, 3));
+		logger.pass("Login Pass");
 
 //	 loginpage.loginToErp("maco", "ZiperpDemo", "123", "Demo Company");
 
@@ -28,6 +32,15 @@ public class LoginTestERP extends BaseClass {
 		System.out.println(aftername + " = Title Name After Login");
 		String afterurl = driver.getCurrentUrl();
 		System.out.println(afterurl + "= URL After Login");
+	}
+
+	@Test(priority = 2)
+	public void loginapp1() {
+
+		logger = report.createTest("Login to ZipERP");
+
+		logger.fail("Login Failed");
+
 	}
 
 }
